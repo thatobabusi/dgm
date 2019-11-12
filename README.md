@@ -1,1 +1,1 @@
-# digitalgarden_project_kimberlyte
+# Project Kimberlyte - Simple Lite Weight PHP MVC

@@ -2,7 +2,10 @@
   "name": "thatobabusi/project_kimberlite",
   "type": "library",
   "description": "Putting together my commands",
-  "keywords": ["php","laravel"],
+  "keywords": [
+    "php",
+    "laravel"
+  ],
   "homepage": "http://thatobabusi.co.za",
   "license": "MIT",
   "authors": [
@@ -12,5 +15,10 @@
       "homepage": "http://thatobabusi.co.za",
       "role": "Developer"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "thatobabusi\\HelloWorld\\": "src/"
+    }
+  }
 }

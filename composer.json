@@ -1,0 +1,16 @@
+{
+  "name": "thatobabusi/project_kimberlite",
+  "type": "library",
+  "description": "Putting together my commands",
+  "keywords": ["php","laravel"],
+  "homepage": "http://thatobabusi.co.za",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thato Babusi",
+      "email": "thatobabusi@yahoo.com",
+      "homepage": "http://thatobabusi.co.za",
+      "role": "Developer"
+    }
+  ]
+}

@@ -37,33 +37,13 @@ class ThatoTwoCommand extends Command
      */
     public function handle()
     {
-        $bar = $this->output->createProgressBar(5);
-        $bar->start();
-
         $this->error('Running Clear Cache Command. By Thato Babusi ~ 20190925');
-
         $this->info('');
         $this->info('Starting cache optimization.');
-        $this->info('');
-        $bar->advance();
-
         $this->call('config:clear');
-        $this->info('');
-        $bar->advance();
-
         $this->call('route:clear');
-        $this->info('');
-        $bar->advance();
-
         $this->call('cache:clear');
-        $this->info('');
-        $bar->advance();
-
         $this->call('view:clear');
-        $this->info('');
-        $bar->advance();
-
         $this->error('Finished!!!');
-        $bar->finish();
     }
 }

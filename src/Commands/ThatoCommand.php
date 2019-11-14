@@ -37,24 +37,8 @@ class ThatoCommand extends Command
      */
     public function handle()
     {
-        $this->error('Running Clear Cache Command. By Thato Babusi ~ 20190925');
-
         $this->info('');
-        $this->info('Starting cache optimization.');
+        $this->info('Hello World!!!.');
         $this->info('');
-
-        $this->call('config:clear');
-        $this->info('');
-
-        $this->call('route:clear');
-        $this->info('');
-
-        $this->call('cache:clear');
-        $this->info('');
-
-        $this->call('view:clear');
-        $this->info('');
-
-        $this->error('Finished!!!');
     }
 }

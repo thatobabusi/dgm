@@ -17,6 +17,11 @@
       "Thato\\": "src/"
     }
   },
+  "repositories": {
+    "type": "path",
+    "url": "../dgm",
+    "symlink": true
+  },
   "extra": {
     "laravel": {
       "providers": [

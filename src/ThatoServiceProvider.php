@@ -13,11 +13,8 @@ class ThatoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('command.thato.thato', function($app){
-            return $app['Thato\Commands\ThatoCommand'];
-        });
-
-        $this->commands('command.thato.thato');
+        $this->registerThatoCommand();
+        $this->registerThatoTwoCommand();
     }
 
     /**
@@ -28,5 +25,20 @@ class ThatoServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+    }
+
+    public function registerThatoCommand()
+    {
+        $this->app->singleton('command.thato.thato', function($app){
+            return $app['Thato\Commands\ThatoCommand'];
+        });
+        $this->commands('command.thato.thato');
+    }
+    public function registerThatoTwoCommand()
+    {
+        $this->app->singleton('command.thato.thatotwo', function($app){
+            return $app['Thato\Commands\ThatoTwoCommand'];
+        });
+        $this->commands('command.thato.thatotwo');
     }
 }

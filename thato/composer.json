@@ -1,0 +1,27 @@
+{
+  "name": "thatobabusi/dgm",
+  "description": "Test project",
+  "keywords": ["laravel", "php", "artisan"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thato Babusi",
+      "email": "thatobabusi@yahoo.com"
+    }
+  ],
+  "homepage": "https://github.com/thatobabusi",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Thato\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Thato\\Commands\\ThatoServiceProvider"
+      ]
+    }
+  }
+}
